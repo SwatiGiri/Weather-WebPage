@@ -9,10 +9,24 @@ h1, h2  {
     color: teal;
 }
 
+/* Bootstrap overrides */
 .navbar {
     background-color: white;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
+
+.navbar-brand{
+    background-color: teal; 
+    color: white;   
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.navbar-brand:visited {
+    background-color: teal; 
+    color: white;   
+}
+
+/* My own */
 
 .contain {
     display: grid;
