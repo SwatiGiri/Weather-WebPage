@@ -1,0 +1,54 @@
+body { 
+    background-color: #eee;
+}
+
+h1, h2  { 
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    color: teal;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "summary visualizations"
+}
+
+
+.left-box{
+    grid-area: "summary"
+}
+
+.right-box{
+    background-color: red;
+    grid-area: "visualizations"
+}
+
+.box { 
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.summary {
+    margin: 10px ;    
+}
+
+.visualizations { 
+    margin: 10px 10px 10px 20px;    
+}
+
+
+/* In order to adjust website to different screen sizes */
+
+@media (max-width: 800px) {
+    .left-box { 
+        background-color: red;
+    }
+}
+
+

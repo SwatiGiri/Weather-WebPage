@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>WeatherPy</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+  </style>
+</head>
+
+
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Latitude</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Todo: make it drop down -->
+          <li class="active">
+            <a href="#">Plots</a>
+          </li>
+          <li>
+            <a href="#about">Comparasion</a>
+          </li>
+          <li>
+            <a href="#contact">Data</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  <!-- NAVBAR ENDS HERE -->
+
+
+  <div class="contain">
+
+    <!--  Summary  -->
+    <div class="left-box">
+      <div class="box summary">
+
+        <h1>Summary: Latitude vs. X</h1>
+        <hr>
+        
+			  <img src="output_6_0.png" alt="Latitude vs temperature" >    
+        <p>  The purpose of this project was to analyze how wather changes as you get closer to equator. To accompalish this analysis we first pulled data from "Openweather" API to assemble dataset on over 500 cities. </p>
+		
+        <p>	After assembling the dataset , we used the Matplotlib to plot various aspects of weather vs latitude. Factors we looked at included : temperature, cloudiness, windspeed and humidity. this site provides the source data and visualizations created as part of the analysis , as well as explanations and descriptions of any trends and correlations witnessed.</p>
+  
+      </div>
+
+      
+    </div>
+
+    <!-- Visualization  -->
+    <div class="box visualizations">
+        <h2>Visualizations</h2>      
+        <hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore enim ullam voluptate facilis voluptatum eveniet maxime sint. Nihil deserunt quasi veniam repellat laboriosam, aut dicta pariatur, qui magnam aliquam molestias!
+      
+    </div>
+  </div>
+
+
+</body>
+
+</html>
