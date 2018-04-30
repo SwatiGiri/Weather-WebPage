@@ -1,5 +1,6 @@
 body { 
     background-color: #eee;
+    line-height: 200% ;
 }
 
 h1, h2  { 
@@ -10,6 +11,7 @@ h1, h2  {
 
 .navbar {
     background-color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
 
 .contain {
@@ -20,34 +22,64 @@ h1, h2  {
 
 
 .left-box{
-    grid-area: "summary"
+    grid-area: "summary";
+    padding: 10px 0px 10px 30px ; 
 }
 
 .right-box{
-    background-color: red;
-    grid-area: "visualizations"
+    grid-area: "visualizations";
+    padding: 10px 30px 10px 30px;
 }
 
 .box { 
     background-color: white;
     padding: 10px;
     border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.summary {
-    margin: 10px ;    
+/* .summary {
+    margin: 10px 10px 10px 30px ;    
 }
 
 .visualizations { 
-    margin: 10px 10px 10px 20px;    
+    margin:     
+} */
+
+.visualizations > img { 
+    margin: 5px;
+    width: 150px;
+    height: 150px;
 }
 
+
+.content > img { 
+    float: left;
+}
 
 /* In order to adjust website to different screen sizes */
 
 @media (max-width: 800px) {
-    .left-box { 
-        background-color: red;
+    
+    .contain {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:    "summary"
+        "visualizations"
+        
+    }
+
+    .left-box{
+        padding-right: 30px; 
+    }
+}
+
+
+@media (max-width: 1050px){
+    .visualizations > img { 
+        margin: 5px;
+        width: 250px;
+        
     }
 }
 
